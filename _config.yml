@@ -21,7 +21,7 @@
 title: Athemis
 email: athem1s@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is Athemis personal website and blog
+  This is Athemis personal website and blog, my little corner of the web
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://athemis.me" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: athem1s
