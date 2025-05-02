@@ -1,7 +1,7 @@
 ---
 title: Ultimate Guide for Klipper Installation on Ender 3 V3 SE
 date: 2024-05-20
-last_modified_at: 2025-01-06
+last_modified_at: 2025-05-02
 collection: projects
 header:
   image: /assets/images/klipper_guide/ender3.jpeg
@@ -127,6 +127,9 @@ Then go to one of the many Github Repos to get a configuration file that is pre-
 Make sure your SD card is formatted as FAT32 with an allocation size of 4096, otherwise you might run into issues and be unable to flash
 {: .notice--warning}
 
+**2025 Update thanks to @derlaft:** In the printer screen, check your "hardware version". If it's "CR4NS200320C14" you have the new motherboard version. Keep this in mind for step 2:
+{: .notice--warning}
+
 To create the actual firmware that will be running in your 3D printer, you have to compile the firmware on your Rasberry Pi. For this, you need to follow the following steps:
 
 1. Go to the `/klipper` directory and run the menuconfig command by running the following code:
@@ -136,13 +139,20 @@ To create the actual firmware that will be running in your 3D printer, you have 
    make menuconfig
    ```
 
-2. Select the following settings:
+2. Select the following settings depending on your motherboard:
 
    ```
+   Original motherboard:
    - Micro-controller architecture: STMicroelectronics STM32
    - Processor model: STM32F103
    - Bootloader offset: 28KiB
    - Communication interface: Serial (on USART1 PA10/PA09)
+
+   New motherboard:
+   - Micro-controller architecture: STMicroelectronics STM32
+   - Processor model: STM32F401
+   - Bootloader offset: 64KiB
+   - Communication interface: Serial (on USART1 PA10/PA9)
    ```
 
 3. After everything is selected, press q and save your changes, then run:
@@ -171,7 +181,10 @@ cp klipper.bin ~/printer_data/config/
 
 Now when you go to the configuration tab of your Fluid/Mainsail UI, the `klipper.bin` file should be there so you can just right click and download to your computer. Once you download the file, the next steps are:
 
-1. Transfer the klipper.bin file to your printer's SD card
+If you have the new motherboard version: create a directory named `STM32F4_UPDATE` in your SD card and move the `klipper.bin` file there, then go to step 2. If you have the old motherboard then proceed as per below steps.
+{: .notice--warning}
+
+1. Transfer the `klipper.bin` file to your printer's SD card
 2. Turn off the printer
 3. Insert SD card
 4. Turn on the printer and wait 15 seconds
