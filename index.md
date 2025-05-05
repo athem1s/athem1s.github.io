@@ -28,6 +28,13 @@ feature_row:
     url: "/categories/gear/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
+  - image_path: /assets/images/3d-printing.jpg
+    alt: "3d printers in a workbech with an ipad showing a CAD model"
+    title: "3D Printing"
+    excerpt: "Guides, tips and tricks related to 3D printing"
+    url: "/categories/3dprinting/"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
 ---
 
 # Here you will find blogs about:

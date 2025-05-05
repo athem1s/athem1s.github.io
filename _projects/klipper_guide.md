@@ -3,6 +3,7 @@ title: Ultimate Guide for Klipper Installation on Ender 3 V3 SE
 date: 2024-05-20
 last_modified_at: 2025-05-02
 collection: projects
+categories: 3dprinting
 header:
   image: /assets/images/klipper_guide/ender3.jpeg
   teaser: /assets/images/klipper_guide/ender3.jpeg
