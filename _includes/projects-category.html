@@ -1,0 +1,14 @@
+{% assign taxonomy = include.taxonomy %}
+{% assign filtered = "" | split: "" %}
+
+{% for project in site.projects %}
+{% unless project.hidden %}
+{% if project.categories contains taxonomy %}
+{% assign filtered = filtered | push: project %}
+{% endif %}
+{% endunless %}
+{% endfor %}
+
+{% for post in filtered %}
+{% include archive-single.html %}
+{% endfor %}

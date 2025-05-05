@@ -1,0 +1,72 @@
+{% assign all_docs = site.posts | concat: site.projects %}
+{% assign categories = "" | split: "" %}
+{% assign category_map = {} %}
+
+{%- for doc in all_docs -%}
+{% unless doc.hidden %}
+{% for cat in doc.categories %}
+{% unless categories contains cat %}
+{% assign categories = categories | push: cat %}
+{% endunless %}
+
+{% assign existing = category_map[cat] | default: "" | split: "" %}
+{% assign updated = existing | push: doc %}
+{% capture varname %}category_map_{{ cat | slugify }}{% endcapture %}
+{% assign category_map = category_map | merge: category_map %}
+<!-- This line is dummy and not needed in Jekyll 3, just keep varname scoped -->
+{% assign category_map = category_map %}
+<!-- noop -->
+{% assign [varname] = updated %}
+{% endfor %}
+{% endunless %}
+{%- endfor %}
+
+
+<ul class="taxonomy__index">
+  {% assign all_docs = site.posts | concat: site.projects %}
+  {% assign categories = "" | split: "" %}
+
+  {% for doc in all_docs %}
+  {% unless doc.hidden %}
+  {% for cat in doc.categories %}
+  {% unless categories contains cat %}
+  {% assign categories = categories | push: cat %}
+  {% endunless %}
+  {% endfor %}
+  {% endunless %}
+  {% endfor %}
+
+  {% assign sorted = categories | sort %}
+  {% for cat in sorted %}
+  {% assign count = 0 %}
+  {% for doc in all_docs %}
+  {% unless doc.hidden %}
+  {% if doc.categories contains cat %}
+  {% assign count = count | plus: 1 %}
+  {% endif %}
+  {% endunless %}
+  {% endfor %}
+  <li>
+    <a href="#{{ cat | slugify }}">
+      <strong>{{ cat }}</strong> <span class="taxonomy__count">{{ count }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% for cat in sorted %}
+<section id="{{ cat | slugify }}" class="taxonomy__section">
+  <h2 class="archive__subtitle">{{ cat }}</h2>
+  <div class="entries-{{ entries_layout }}">
+    {% assign posts = site.posts | concat: site.projects %}
+    {% for post in posts %}
+    {% if post.categories contains cat %}
+    {% include archive-single.html type=entries_layout %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <a href="#page-title" class="back-to-top">
+    {{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;
+  </a>
+</section>
+{% endfor %}
