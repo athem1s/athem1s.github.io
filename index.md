@@ -15,10 +15,17 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/images/privacy.jpg
-    alt: privacy written with physical letters
+    alt: "privacy written with physical letters"
     title: "Privacy"
     excerpt: "All things related to privacy as a fundamental human right especially in the digital age"
     url: "/categories/privacy/"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/gear.jpg
+    alt: "an image of some camping gear over a mountain"
+    title: "Gear"
+    excerpt: "Not sponsored gear reviews and recommendations of products I owned or have owned, spanning different categories like camping, photography, EDC, stationary, travel, etc"
+    url: "/categories/gear/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
 ---
