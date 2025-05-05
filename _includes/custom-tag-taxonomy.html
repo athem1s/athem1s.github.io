@@ -1,0 +1,52 @@
+{% assign all_docs = site.posts | concat: site.projects %}
+{% assign tags = "" | split: "" %}
+
+{%- for doc in all_docs -%}
+{% unless doc.hidden %}
+{% for tag in doc.tags %}
+{% unless tags contains tag %}
+{% assign tags = tags | push: tag %}
+{% endunless %}
+{% endfor %}
+{% endunless %}
+{%- endfor %}
+
+<ul class="taxonomy__index">
+  {% assign sorted = tags | sort %}
+  {% for tag in sorted %}
+  {% assign count = 0 %}
+  {% for doc in all_docs %}
+  {% unless doc.hidden %}
+  {% if doc.tags contains tag %}
+  {% assign count = count | plus: 1 %}
+  {% endif %}
+  {% endunless %}
+  {% endfor %}
+  <li>
+    <a href="#{{ tag | slugify }}">
+      <strong>{{ tag }}</strong> <span class="taxonomy__count">{{ count }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+
+{% for tag in sorted %}
+<section id="{{ tag | slugify }}" class="taxonomy__section">
+  <h2 class="archive__subtitle">{{ tag }}</h2>
+  <div class="entries-{{ entries_layout }}">
+    {% for doc in all_docs %}
+    {% unless doc.hidden %}
+    {% if doc.tags contains tag %}
+    {% assign post = doc %}
+    {% include archive-single.html type=entries_layout %}
+    {% endif %}
+    {% endunless %}
+    {% endfor %}
+  </div>
+  <a href="#page-title" class="back-to-top">
+    {{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;
+  </a>
+</section>
+{% endfor %}
