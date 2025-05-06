@@ -13,9 +13,7 @@
 {% assign updated = existing | push: doc %}
 {% capture varname %}category_map_{{ cat | slugify }}{% endcapture %}
 {% assign category_map = category_map | merge: category_map %}
-<!-- This line is dummy and not needed in Jekyll 3, just keep varname scoped -->
 {% assign category_map = category_map %}
-<!-- noop -->
 {% assign [varname] = updated %}
 {% endfor %}
 {% endunless %}
