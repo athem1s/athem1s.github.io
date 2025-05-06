@@ -7,6 +7,13 @@ header:
 excerpt: "Hi! Welcome to my little corner of the web where I post about a wide variety of topics that I'm passionate about."
 author_profile: false
 feature_row:
+  - image_path: /assets/images/3d-printing.jpg
+    alt: "3d printers in a workbech with an ipad showing a CAD model"
+    title: "3D Printing"
+    excerpt: "Guides, tips and tricks related to 3D printing"
+    url: "/categories/3dprinting/"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
   - image_path: /assets/images/tech.jpg
     alt: "a motherboard without the cpu, this image represents tech"
     title: "Tech"
@@ -17,7 +24,7 @@ feature_row:
   - image_path: /assets/images/privacy.jpg
     alt: "privacy written with physical letters"
     title: "Privacy"
-    excerpt: "All things related to privacy as a fundamental human right especially in the digital age"
+    excerpt: "All things related to privacy as a fundamental human right in the digital age"
     url: "/categories/privacy/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
@@ -28,11 +35,25 @@ feature_row:
     url: "/categories/gear/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: /assets/images/3d-printing.jpg
-    alt: "3d printers in a workbech with an ipad showing a CAD model"
-    title: "3D Printing"
-    excerpt: "Guides, tips and tricks related to 3D printing"
-    url: "/categories/3dprinting/"
+  - image_path: /assets/images/books.jpg
+    alt: "books stacked up with an open book at the top"
+    title: "Books"
+    excerpt: "Summaries, reviews and general comments of books I've read"
+    url: "/categories/books/"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: "/assets/images/nature.jpg"
+    alt: "a foggy forest"
+    title: "The Great Outdoors"
+    excerpt: "Random collection of blog posts about my nature hobbies like camping, hiking, bushcraft, etc."
+    url: "/categories/nature/"
+    btn_label: "Read more"
+    btn_class: "btn--inverse"
+  - image_path: "/assets/images/gaming.jpg"
+    alt: "a person playing games with a keyboard and mouse"
+    title: "Gaming"
+    excerpt: "All things gaming, maybe some game reviews or tips and tricks"
+    url: "/categories/gaming"
     btn_label: "Read More"
     btn_class: "btn--inverse"
 ---
