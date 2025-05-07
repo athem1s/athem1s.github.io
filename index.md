@@ -31,7 +31,7 @@ feature_row:
   - image_path: /assets/images/gear.jpg
     alt: "an image of some camping gear over a mountain"
     title: "Gear"
-    excerpt: "Not sponsored gear reviews and recommendations of products I owned or have owned, spanning different categories like camping, photography, EDC, stationary, travel, etc"
+    excerpt: "Not sponsored gear reviews and recommendations of products I owned or have owned, spanning different categories like camping, photography, EDC, stationery, travel, etc"
     url: "/categories/gear/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
@@ -54,6 +54,13 @@ feature_row:
     title: "Gaming"
     excerpt: "All things gaming, maybe some game reviews or tips and tricks"
     url: "/categories/gaming"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: "/assets/images/cybersecurity-screen.jpg"
+    alt: "an image of a laptop screen with text in a terminal"
+    title: "Cybersecurity and CTFs"
+    excerpt: "Topics related to ethical hacking, cybersecurity, Capture-The-Flag writeups, etc"
+    url: "/categories/hacking/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
 ---
