@@ -14,11 +14,11 @@ feature_row:
     url: "/categories/3dprinting/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: /assets/images/tech.jpg
-    alt: "a motherboard without the cpu, this image represents tech"
-    title: "Tech"
-    excerpt: "hi"
-    url: "/categories/tech/"
+  - image_path: /assets/images/gear.jpg
+    alt: "an image of some camping gear over a mountain"
+    title: "Gear"
+    excerpt: "Not sponsored gear reviews and recommendations of products I owned or have owned, spanning different categories like camping, photography, EDC, stationery, travel, etc"
+    url: "/categories/gear/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/images/privacy.jpg
@@ -26,13 +26,6 @@ feature_row:
     title: "Privacy"
     excerpt: "All things related to privacy as a fundamental human right in the digital age"
     url: "/categories/privacy/"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-  - image_path: /assets/images/gear.jpg
-    alt: "an image of some camping gear over a mountain"
-    title: "Gear"
-    excerpt: "Not sponsored gear reviews and recommendations of products I owned or have owned, spanning different categories like camping, photography, EDC, stationery, travel, etc"
-    url: "/categories/gear/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/images/books.jpg
@@ -49,6 +42,13 @@ feature_row:
     url: "/categories/nature/"
     btn_label: "Read more"
     btn_class: "btn--inverse"
+  - image_path: /assets/images/tech.jpg
+    alt: "a motherboard without the cpu, this image represents tech"
+    title: "Tech"
+    excerpt: "Technology related posts like news or the latest and greatest tech"
+    url: "/categories/tech/"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
   - image_path: "/assets/images/gaming.jpg"
     alt: "a person playing games with a keyboard and mouse"
     title: "Gaming"
@@ -63,12 +63,21 @@ feature_row:
     url: "/categories/hacking/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
+  - image_path: "/assets/images/research.jpg"
+    alt: "an image of a desk with papers and a magnifying glass"
+    title: "Random Research"
+    excerpt: "Research about topics I'm curious about with the only intention of finding out more about them"
+    url: "/categories/research"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
 ---
 
 # Here you will find blogs about:
 
 {: .text-center}
 {% include feature_row %}
+
+Or click here to check out: [All categories](/categories/)
 
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>

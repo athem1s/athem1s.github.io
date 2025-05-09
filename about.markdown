@@ -4,15 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hey, I'm Athemis! An aerospace engineer with a polymath heart. This webpage is a place for me to write about my interests and is basically a repository of my projects.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+There is no AI involved in writing any of my posts as there is already enough of that stuff all over the internet, here you'll only find human made things so if you're into that sort of thing then I hope you find something that sparks your curiosity and we can connect over.
