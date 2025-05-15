@@ -1,5 +1,5 @@
 ---
-title: The 4 EDC Essentials
+title: The 5 EDC Essentials
 date: 2025-05-13
 categories: gear life
 last_modified_at: 2025-05-14
@@ -23,6 +23,9 @@ In my case I have a leather “thing” that I use to carry them all (except for
 {% include figure image_path="/assets/images/5-essentials/edc-kit-e.jpeg" alt="an image of a victorinox, a flashlight, a pen, and a lighter" caption="The things that go inside my leather thing" %}
 
 So lets go one by one to see the logic behind them. Also I want to clarify that the links contained in this post are NOT sponsored or affiliate links, they are simply there so you can go to the shop and check the full specs of whatever I’m linking to, and the things I’m recommending here are simply because I like them.
+
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help keep the site ad-free', '#41b5eb', 'B0B6YCPC6');kofiwidget2.draw();</script>
+
 # Watch
 I know, I know, why do I need a watch if my phone already tells time? Well a watch is a way better version of your phone for telling time but it is also so much more than that. A watch tells you the time instantly by just looking at your wrist without the need to pull out your phone, turning on the screen and getting distracted by a ton of notifications. 
 
