@@ -1,0 +1,6 @@
+{%- assign all_docs = site.posts | concat: site.projects -%}
+{%- assign posts = all_docs | where_exp: "post", "post.hidden != true and post.categories contains include.taxonomy" -%}
+
+{%- for post in posts -%}
+{% include archive-single.html %}
+{%- endfor -%}
