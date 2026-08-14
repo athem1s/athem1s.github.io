@@ -124,6 +124,9 @@ Then go to one of the many Github Repos to get a configuration file that is pre-
 **2025 Update:** I recommend [shubham0x13's](https://github.com/shubham0x13/ender-3-v3-se-klipper-config) config file that has several upgrades compared to bootuz's config file. Copy and paste the contents of `printer.cfg` and `macro.cfg` into yours.
 {: .notice--warning}
 
+**2026 Update:** Depending on which config file you use, the name of the `macro.cfg` file changes. For shubham0x13's file the name should be `macros.cfg`. For bootuz-dinamon's file the name should be `macro.cfg`
+{: .notice--warning}
+
 ## Create Printer Firmware (.bin file)
 
 Make sure your SD card is formatted as FAT32 with an allocation size of 4096, otherwise you might run into issues and be unable to flash
